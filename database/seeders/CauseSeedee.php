@@ -1,0 +1,29 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class CauseSeedee extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('causes')->insert([
+            'description'=>'volée',
+        ],);
+        DB::table('causes')->insert([
+
+            'description'=>'expiré',
+        ],);
+        DB::table('causes')->insert([
+
+            'description'=>'libre'
+        ]
+        );
+    }
+}
